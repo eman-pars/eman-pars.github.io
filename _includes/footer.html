@@ -1,0 +1,36 @@
+<!-- <div style="height: 200px; width: 100%;"></div> -->
+<footer class="footer">
+    <div class="container-fluid bg-dark mt-auto">
+      <div class="row ">
+        <div class="col-md-10 col-lg-8 mx-auto pt-3">
+          <ul class="list-inline text-center">
+            {% if site.email %}
+            <li class="list-inline-item px-3">
+              <a href="mailto:{{ site.email | encode_email }}">
+                <i class="fa fa-at fa-5x" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% if site.linkedin_username %}
+           <li class="list-inline-item px-3">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+            {% if site.github_username %}
+            <li class="list-inline-item">
+              <a href="https://github.com/{{ site.github_username }}">
+                  <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+          <p class="copyright text-muted text-center">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+        </div>
+      </div>
+    </div>
+</footer>

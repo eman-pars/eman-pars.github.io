@@ -1,5 +1,4 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main_nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main_nav">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
@@ -11,13 +10,13 @@
           <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
         </li>
         <li class="nav-item mr-5">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+          <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
         </li>
         <li class="nav-item mr-5">
           <a class="nav-link" href="{{ "/projects" | relative_url }}">Projects</a>
         </li>
         <li class="nav-item mr-5">
-          <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
+          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
         </li>
         <li class="nav-item mr-5">
           <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
@@ -27,4 +26,3 @@
   </div>
 </nav>
 
-<div style="height: 50px;"></div>

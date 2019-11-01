@@ -3,3 +3,24 @@
 	text-align: center;
 	align-content: center;
 }
+
+body {
+	min-height: 100vh;
+}
+
+#main {
+	min-height: 100vh;
+	padding-bottom: 200px;
+	padding-top: 56px;
+}
+
+.footer {
+	position: relative;
+	margin-top: -200px;
+	height: 200px;
+	padding: 5px 0px;
+}
+
+.footer div {
+	height: 200px;
+}

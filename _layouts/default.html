@@ -4,10 +4,12 @@
 
 {% include head.html %}
 
-<body>
+<body background="/img/back1.jpg">
 
   {% include navbar.html %}
-  {{ content }}
+  <div class="container-fluid" id="main">
+	  {{ content }}
+  </div>
+  {% include footer.html %}
 </body>
-
 </html>

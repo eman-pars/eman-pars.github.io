@@ -4,29 +4,23 @@ layout: default
 
 {% if page.background %}
 <header>
-  <div class="container" style="height: 300px; background-image: url('{{page.background | relative_url}}');">
+  <div class="container" style="max-height: 300px; background-image: url('{{page.background | relative_url}}');">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
+      <div class="">
         <h1 class="page_heading">
           {{ page.title | upcase }}
-        </h1><hr/>
-        {% if page.description %}
-          <p class="page_subheading">{{ page.description }}</p>
-        {% endif %}   
+        </h1>  
       </div>
     </div>
   </div>
 {% else %}
 <header>
-  <div class="container" style="height: 300px;">
+  <div class="container mt-5" style="max-height: 300px;">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
+      <div class="">
         <h1 class="page_heading">
           {{ page.title | upcase }}
-        </h1><hr/>
-        {% if page.description %}
-          <p class="page_subheading">{{ page.description }}</p>
-        {% endif %}   
+        </h1>
       </div>
     </div>
   </div>
