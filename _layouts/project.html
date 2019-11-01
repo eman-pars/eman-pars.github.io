@@ -4,7 +4,7 @@ layout: default
 
 {% if page.background %}
 <header>
-  <div class="container" style="max-height: 300px; background-image: url('{{page.background | relative_url}}');">
+  <div class="container" style="max-height: 230px; background-image: url('{{page.background | relative_url}}');">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
       <div class="">
         <h1 class="page_heading">
@@ -15,7 +15,7 @@ layout: default
   </div>
 {% else %}
 <header>
-  <div class="container mt-5" style="max-height: 300px;">
+  <div class="container mt-5" style="max-height: 230px;">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
       <div class="">
         <h1 class="page_heading">
@@ -27,6 +27,7 @@ layout: default
 {% endif %}
 </header>
 
-<div class="container shadow p-5 mb-5 bg-white border-top rounded">
+<div class="container shadow-lg p-5 mb-5 bg-white border-top rounded content-container">
+  <hr class="page-rule">
   {{ content }}
 </div>

@@ -1,7 +1,7 @@
 
 .list_item_heading {
 	color: #829356;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .list_item_subheading {
@@ -16,5 +16,10 @@
 }
 
 .description-content {
-	font-size: 20px;
+	font-size: 16px;
+}
+
+.description-content:first-letter {
+	font-size: 28px;
+	color: #9a2617;
 }

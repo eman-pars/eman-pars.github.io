@@ -1,0 +1,64 @@
+.timeline-ul {
+	list-style: none;
+	padding: 0; 
+}
+
+.timeline {
+	border-left: 3px solid #9a2617;
+	margin-left: 30%;
+	margin-top: 40px;
+}
+
+.timeline-ul li {
+}
+
+.timeline-ul li div {
+	height: 150px;
+}
+
+
+.timeline-item {
+	margin-left: -120px;
+}
+
+.timeline-item-info {
+	padding-left: 40px;
+	margin-left: 20px;
+	display: table;
+}
+
+.timeline-item-info span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.dot-div {
+	display: table;
+}
+
+.timeline-dot {
+	position: relative;
+	left: -15px;
+	display: table-cell;
+	vertical-align: middle;
+	top: 0px;
+	color: #9a2617
+}
+
+.dot-date{
+	margin-right: 30px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #9a2617;
+	display: table;
+}
+
+.dot-date p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.course-list {
+	display: inline-block;
+}

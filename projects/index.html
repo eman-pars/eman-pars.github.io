@@ -5,8 +5,8 @@ title: "Projects"
 <div class="d-flex flex-column">
 
 	{% for project in site.projects %}
-	<div class="py-4 px-4 w-100 border-bottom">
-		<a href="{{project.url | relative | escape }}">
+	<div class="py-5 px-4 w-100 border-bottom">
+		<a href="{{ project.url | relative | escape }}">
 		<h1 class="list_item_heading">{{ project.title }}</h1>
 		<h4 class="list_item_subheading">{{project.description}}</h4>
 	</a>
