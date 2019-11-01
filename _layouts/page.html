@@ -3,28 +3,36 @@ layout: default
 ---
 
 {% if page.background %}
-<header class="banner" style="background-image: url('{{page.background | prepend: site.baseurl | replace: '//', '/'}}');">
-{% else %}
-<header class="banner">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.description %}
-            <span class="sub-heading">{{ page.description }}</span>
-            {% endif %}
-          </div>
-        </div>
+<header>
+  <div class="container" style="height: 300px; background-image: url('{{page.background | relative_url}}');">
+    <div class="d-flex flex-row align-items-center justify-content-center h-100">
+      <div class="typewriter">
+        <h1 class="page_heading">
+          {{ page.title | upcase }}
+        </h1><hr/>
+        {% if page.description %}
+          <p class="page_subheading">{{ page.description }}</p>
+        {% endif %}   
       </div>
     </div>
+  </div>
+{% else %}
+<header>
+  <div class="container" style="height: 300px;">
+    <div class="d-flex flex-row align-items-center justify-content-center h-100">
+      <div class="typewriter">
+        <h1 class="page_heading">
+          {{ page.title | upcase }}
+        </h1><hr/>
+        {% if page.description %}
+          <p class="page_subheading">{{ page.description }}</p>
+        {% endif %}   
+      </div>
+    </div>
+  </div>
 {% endif %}
 </header>
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-md-10 mx-auto">
-			{{ content }}
-		</div>
-	</div>
+<div class="container shadow p-3 mb-5 bg-white rounded">
+  {{ content }}
 </div>

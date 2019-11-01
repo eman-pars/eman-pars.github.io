@@ -1,0 +1,12 @@
+---
+layout: page
+title: "Posts"
+---
+
+{% for post in paginator.posts %}
+<div>
+	<a href="{{post.url | relative | escape }}">
+	{{post.title}}
+</a>
+</div>
+{% endfor %}
