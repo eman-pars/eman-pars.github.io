@@ -1,3 +1,19 @@
 i {
 	color: #ffffff;
 }
+
+body, footer {
+	background-color: #300a24;
+}
+
+.prompt {
+	color: #008f11;
+}
+
+.page_heading {
+	color: #ffffff;
+}
+
+header > div, #main > div {
+	box-shadow: 0px 0px 20px black;
+}

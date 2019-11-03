@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /home
 ---
 
 {% if page.background %}
@@ -7,8 +8,8 @@ layout: default
   <div class="container" style="height: 230px; background-image: url('{{page.background | relative_url}}');">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
       <div class="typewriter">
-        <h1 class="page_heading">
-          {{ page.title | upcase }}
+        <h1 class="prompt">
+          user@site:~$echo "hi, there\n"user@site:~$hi, there
         </h1>
         {% if page.description %}
           <p class="page_subheading">{{ page.description }}</p>
@@ -18,22 +19,32 @@ layout: default
   </div>
 {% else %}
 <header>
-  <div class="container" style="height: 230px;">
-    <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
-        <h1 class="page_heading">
-          {{ page.title | upcase }}
-        </h1>
-        {% if page.description %}
-          <p class="page_subheading">{{ page.description }}</p>
-        {% endif %}   
+  <div class="container" style="height: 230px; padding: 0 0 10px 0;">
+    <div class="d-flex flex-column align-items-start justify-content-end h-100">
+      <div class="d-flex flex-row align-items-center">
+        <h1 class="prompt">user@site:~$</h1>
+        <div class="command1">
+          <h1 class="page_heading">echo "hi, there"</h1>
+        </div>
+      </div>
+      <h1 class="page_heading command_output">hi, there</h1>
+      <div class="d-flex flex-row align-items-center">
+        <h1 class="prompt command_output">user@site:</h1>
+        <div class="command2">
+          <h1 class="page_heading">
+            cat home
+          </h1>
+          {% if page.description %}
+            <p class="page_subheading">{{ page.description }}</p>
+          {% endif %}   
+        </div>
       </div>
     </div>
   </div>
 {% endif %}
 </header>
 
-<div class="container shadow-lg p-5 mb-5 bg-white rounded content-container">
+<div class="container p-5 mb-5 bg-white rounded content-container">
 	<hr class="page-rule">
   {{ content }}
 </div>

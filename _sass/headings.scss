@@ -1,6 +1,6 @@
 
 .list_item_heading {
-	color: #829356;
+	color: #9a2617;
 	font-weight: normal;
 }
 
@@ -9,10 +9,17 @@
 }
 
 .page_heading {
-	font-size: 72px;
-	font-weight: bold;
-	color: #9a2617;
+	font-size: 24px;
+	letter-spacing: .10em;
 	text-align: center;
+}
+
+.prompt {
+	font-size: 24px;
+	letter-spacing: .10em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0;
 }
 
 .description-content {

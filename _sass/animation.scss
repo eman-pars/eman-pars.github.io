@@ -1,12 +1,37 @@
-.typewriter h1 {
+.command h1 {
   overflow: hidden;
   border-right: .15em solid black;
   white-space: nowrap;
-  margin: 0 auto;
+  margin: 0 0;
   letter-spacing: .10em;
   animation: 
-    typing 0.75s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 0.5s steps(20, end),
+    blink-caret 0.5s step-end infinite;
+}
+
+.command1 h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 0;
+  letter-spacing: .10em;
+  animation: 
+    typing 0.5s steps(20, end),
+    blink-caret 0.5s step-end;
+}
+
+.command2 h1 {
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap;
+  margin: 0 0;
+  letter-spacing: .10em;
+  opacity: 0;
+  animation: 
+    typing 0.5s steps(20, end),
+    blink-caret 0.5s step-end infinite,
+    print 0.05s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes typing {
@@ -16,5 +41,19 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: black; }
+  50% { border-color: white; }
 }
+
+.command_output {
+  opacity: 0;
+  margin: 0 0;
+  letter-spacing: .10em;
+  animation: print 0.1s 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes print {
+  from { opacity: 0 } to { opacity: 1 }
+}
+

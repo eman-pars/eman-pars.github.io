@@ -1,13 +1,13 @@
 <!-- <div style="height: 200px; width: 100%;"></div> -->
 <footer class="footer">
-    <div class="container-fluid bg-dark mt-auto">
+    <div class="container-fluid mt-auto">
       <div class="row ">
         <div class="col-md-10 col-lg-8 mx-auto pt-3">
           <ul class="list-inline text-center">
             {% if site.email %}
             <li class="list-inline-item px-3">
               <a href="mailto:{{ site.email | encode_email }}">
-                <i class="fa fa-at fa-5x" aria-hidden="true"></i>
+                <i class="fa fa-at fa-2x" aria-hidden="true"></i>
               </a>
             </li>
             {% endif %}
@@ -24,7 +24,7 @@
             {% if site.github_username %}
             <li class="list-inline-item">
               <a href="https://github.com/{{ site.github_username }}">
-                  <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+                  <i class="fa fa-github fa-2x" aria-hidden="true"></i>
               </a>
             </li>
             {% endif %}

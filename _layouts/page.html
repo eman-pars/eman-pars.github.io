@@ -6,6 +6,9 @@ layout: default
 <header>
   <div class="container" style="height: 230px; background-image: url('{{page.background | relative_url}}');">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
+        <h1 class="prompt">
+          user@site:~$
+        </h1>
       <div class="typewriter">
         <h1 class="page_heading">
           {{ page.title | upcase }}
@@ -18,22 +21,18 @@ layout: default
   </div>
 {% else %}
 <header>
-  <div class="container" style="height: 230px;">
-    <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
-        <h1 class="page_heading">
-          {{ page.title | upcase }}
-        </h1>
-        {% if page.description %}
-          <p class="page_subheading">{{ page.description }}</p>
-        {% endif %}   
+  <div class="container" style="height: 230px; padding-left: 0; padding-bottom: 10px;">
+      <div class="d-flex flex-row align-items-end justify-content-start h-100">
+        <h1 class="prompt">user@site:~$</h1>
+        <div class="command">
+          <h1 class="page_heading">cat {{ page.title | downcase | replace: ' ', '_'}}</h1>  
+        </div>
       </div>
-    </div>
   </div>
 {% endif %}
 </header>
 
-<div class="container shadow-lg p-5 mb-5 bg-white border-top rounded content-container">
+<div class="container p-5 mb-5 bg-white border-top rounded content-container">
   <hr class="page-rule">
   {{ content }}
 </div>
