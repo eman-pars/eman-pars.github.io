@@ -6,7 +6,7 @@ layout: default
 <header>
   <div class="container" style="height: 230px; background-image: url('{{page.background | relative_url}}');">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
+      <div class="">
         <h1 class="page_heading">
           {{ page.title | upcase }}
         </h1>
@@ -20,7 +20,7 @@ layout: default
 <header>
   <div class="container" style="height: 230px;">
     <div class="d-flex flex-row align-items-center justify-content-center h-100">
-      <div class="typewriter">
+      <div class="">
         <h1 class="page_heading">
           {{ page.title | upcase }}
         </h1>
@@ -33,7 +33,7 @@ layout: default
 {% endif %}
 </header>
 
-<div class="container shadow-lg p-5 mb-5 bg-white border-top rounded content-container">
+<div class="container p-5 mb-5 rounded content-container">
   <hr class="page-rule">
   {{ content }}
 </div>
